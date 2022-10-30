@@ -113,6 +113,10 @@ public class NumberGausing implements ActionListener {
 				check_gause.setText("you have reached your limit");
 			}
 		}
+		else if(e.getSource() == reset) {
+			limit = 1;
+			NumberGausing();
+		}
 	}
 
 }
