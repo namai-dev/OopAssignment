@@ -115,7 +115,7 @@ public class NumberGausing implements ActionListener {
 		}
 		else if(e.getSource() == reset) {
 			limit = 1;
-			NumberGausing();
+			
 		}
 	}
 
