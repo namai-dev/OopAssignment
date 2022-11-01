@@ -47,6 +47,7 @@ public class NumberGausing implements ActionListener {
 		check.addActionListener(this);
 		reset = new JButton("Check me");
 		reset.setBounds(350, 250, 100,50);
+		reset.addActionListener(this);
 		
 		gause_1 = new JLabel("Gause a");
 		gause_1.setBounds(200, 300, 260,30);
@@ -117,6 +118,11 @@ public class NumberGausing implements ActionListener {
 			limit = 1;
 			
 		}
+		if(e.getSource() == reset) {
+			limit = 1;
+			correct = generateRandom(); 
+		}
+		
 	}
 
 }
